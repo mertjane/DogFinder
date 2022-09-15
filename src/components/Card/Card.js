@@ -1,13 +1,13 @@
 import React from "react";
 import { CardWrapper, ImgBOX, CardInfo, Origin, Breed } from "./Card.styled";
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <CardWrapper>
-      <ImgBOX />
+    <CardWrapper key={props.id}>
+      <ImgBOX src={props.photo} />
       <CardInfo>
-        <Breed>Breed</Breed>
-        <Origin>Origin</Origin>
+        <Breed>{props.breed}</Breed>
+        <Origin>{props.origin}</Origin>
       </CardInfo>
     </CardWrapper>
   );

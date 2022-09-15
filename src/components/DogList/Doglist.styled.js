@@ -7,7 +7,7 @@ export const ListContainer = styled.main`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px;
+    padding: 70px;
     row-gap: 40px;
     column-gap: 60px;
 `

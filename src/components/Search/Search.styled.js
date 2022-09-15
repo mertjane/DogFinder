@@ -3,14 +3,13 @@ import styled from "styled-components"
 
 export const SearchWrapper = styled.form`
     width: 100%;
-    height: 70px;
+    height: 94px;
     display: flex;
     font-size: 12px;
     font-weight: 500;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    padding-top: 2rem;
     cursor: pointer;
 `
 
