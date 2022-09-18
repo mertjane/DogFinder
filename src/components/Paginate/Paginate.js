@@ -1,4 +1,5 @@
 import React from "react";
+import { ClipLoader } from "react-spinners";
 import { Wrapper, LoadBtn } from "./Paginate.styled";
 import { useDispatch, useSelector } from "react-redux";
 import { getDogsAsync } from "../../redux/dogs/services";
@@ -11,17 +12,13 @@ const Paginate = () => {
 
   return (
     <Wrapper>
-      {status === "loading" && (
-        <div>
-          <span>Loading...</span>
-        </div>
-      )}
+      {status === "loading" && <ClipLoader color="#6a6af5" size={35} />}
       {hasNextPage && status !== "loading" && (
         <LoadBtn onClick={() => dispatch(getDogsAsync(page))}>
-          Load more... ({page})
+          Load more ({page})
         </LoadBtn>
       )}
-      {!hasNextPage && (
+      {!hasNextPage &&(
         <div>
           <span>There is nothing to be shown.</span>
         </div>

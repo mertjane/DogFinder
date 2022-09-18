@@ -10,3 +10,4 @@ export const getDogsAsync = createAsyncThunk("dogs/getDogs", async (page) => {
   );
   return res.data;
 });
+

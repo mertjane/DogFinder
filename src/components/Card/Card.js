@@ -3,7 +3,7 @@ import { CardWrapper, ImgBOX, CardInfo, Origin, Breed } from "./Card.styled";
 
 const Card = (props) => {
   return (
-    <CardWrapper key={props.id}>
+    <CardWrapper>
       <ImgBOX src={props.photo} />
       <CardInfo>
         <Breed>{props.breed}</Breed>
