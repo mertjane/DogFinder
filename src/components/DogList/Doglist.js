@@ -29,23 +29,26 @@ const Doglist = () => {
   const breeds = useSelector((state) => state.dogs.breeds);
   const status = useSelector((state) => state.dogs.status);
   const error = useSelector((state) => state.dogs.error);
+  
   const [query, setQuery] = useState("");
   const queryRegex = /[-!$%^&*()_+|~=`{}/:";'<>?,.0-9+$+\s]/;
   //console.log(breeds.filter(item => item.breed.toLowerCase().includes(query)));
 
   useEffect(() => {
     if (status === "idle") {
-      dispatch(getDogsAsync());
+      dispatch(getDogsAsync())
     }
+
   }, [dispatch, status]);
+  
 
   return (
     <Wrapper>
       <SearchWrapper>
         <SearchInput
           onChange={(e) => setQuery(e.target.value)}
-          value={query}
           type="text"
+          value={query}
           placeholder="search by breed"
         />
         <Button disabled>

@@ -17,13 +17,12 @@ export const ButtonWrap = styled.div`
   padding: 10px 175px 20px;
 `
 export const BackBtn = styled.button`
-  width: 110px;
-  height: 5.12vh;
+  width: 100px;
+  height: 4vh;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
   outline: none;
   margin-top: 8px;
   background: #6a6af5;
@@ -36,7 +35,7 @@ export const BackBtn = styled.button`
     opacity: 0.8;
   }
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
 `
 
 export const Wrapper = styled.section`

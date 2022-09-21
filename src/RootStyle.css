@@ -12,3 +12,11 @@ body{
 html{
   scroll-behavior: smooth;
 }
+
+.disabled{
+  cursor: not-allowed;
+}
+
+.active{
+  cursor: pointer;
+}

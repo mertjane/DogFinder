@@ -18,7 +18,7 @@ const Paginate = () => {
           Load more ({page})
         </LoadBtn>
       )}
-      {!hasNextPage &&(
+      {!hasNextPage && (
         <div>
           <span>There is nothing to be shown.</span>
         </div>
