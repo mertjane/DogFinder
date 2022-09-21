@@ -21,7 +21,7 @@ export const LogoIMG = styled.div`
 `;
 
 export const Divider = styled.hr`
-  width: 85%;
+  width: 77%;
   border: none;
   height: 1px;
   /* Set the hr color */
